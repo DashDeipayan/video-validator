@@ -13,8 +13,7 @@ func InitConfig() {
 	appEnv := os.Getenv("APP_ENV")
 	if appEnv == "" {
 		fmt.Println("APP_ENV is not set, defaulting to 'local'")
-		appEnv = "local" // default to local if not set
-	} else {
+		appEnv = "local"
 		fmt.Printf("APP_ENV is set to here: %s\n", appEnv)
 	}
 	viper.SetConfigName(appEnv)

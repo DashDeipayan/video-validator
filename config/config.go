@@ -19,6 +19,7 @@ func InitConfig() {
 	viper.SetConfigName(appEnv)
 
 	viper.AddConfigPath("./config")
+	viper.AddConfigPath("../config")
 	viper.SetConfigType("json")
 
 	if err := viper.ReadInConfig(); err != nil {

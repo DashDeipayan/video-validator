@@ -1,3 +1,2 @@
 export APP_ENV=local
-
-go run ./app/main.go
+go run ./cmd/main.go
